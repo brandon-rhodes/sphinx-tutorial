@@ -23,12 +23,22 @@ def is_isosceles(a, b, c):
     t = _make_triangle(a, b, c)
     return (t is not None) and t.is_isosceles()
 
-def triangle_area(a, b, c):
-    """Return the area of the triangle with side lengths `a`, `b`, and `c`.
+def compute_perimeter(a, b, c):
+    """Return the perimeer of the triangle with side lengths `a`, `b`, and `c`.
 
     If the three lengths provided cannot be the sides of a triangle,
-    then the area 0.0 is returned.
+    then the perimeter 0 is returned.
 
     """
     t = _make_triangle(a, b, c)
-    return 0.0 if (t is None) else t.area()
+    return 0 if (t is None) else t.perimeter()
+
+def compute_area(a, b, c):
+    """Return the area of the triangle with side lengths `a`, `b`, and `c`.
+
+    If the three lengths provided cannot be the sides of a triangle,
+    then the area 0 is returned.
+
+    """
+    t = _make_triangle(a, b, c)
+    return 0 if (t is None) else t.area()

@@ -52,3 +52,13 @@ class TestUtils(TestCase):
         assert utils.is_isosceles(6, 6, 70) is False
         assert utils.is_isosceles(4, 5, 6) is False
         assert utils.is_isosceles(6, 6, 7) is True
+
+    def test_compute_perimeter(self):
+        assert utils.compute_perimeter(6, 6, 70) == 0
+        assert utils.compute_perimeter(4, 5, 6) == 15
+        assert utils.compute_perimeter(6, 6, 7) == 19
+
+    def test_compute_area(self):
+        assert utils.compute_area(6, 6, 70) == 0
+        assert utils.compute_area(3, 4, 5) == 6
+        assert utils.compute_area(30, 40, 50) == 600
