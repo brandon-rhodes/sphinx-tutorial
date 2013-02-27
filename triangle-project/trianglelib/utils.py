@@ -1,4 +1,4 @@
-"""Routines to test triangle properties without requiring instantiation."""
+"""Routines to test triangle properties without explicit instantiation."""
 
 from trianglelib.shape import Triangle
 
