@@ -20,11 +20,12 @@ The “shape” module
    If the three lengths *cannot* make a valid triangle,
    then ``ValueError`` will be raised instead.
 
+   >>> from trianglelib.shape import Triangle
    >>> t = Triangle(3, 4, 5)
    >>> print t.is_equilateral()
    False
    >>> print t.area()
-   6
+   6.0
 
 The “utils” module
 ------------------

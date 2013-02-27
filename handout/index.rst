@@ -12,6 +12,8 @@ Contents:
    :maxdepth: 2
 
    writing-api
+   writing-tutorial
+   tutorial
    api
 
 Indices and tables
