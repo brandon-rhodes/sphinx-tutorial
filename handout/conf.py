@@ -175,9 +175,14 @@ latex_elements = {
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
+'pointsize': '12pt',
 
 # Additional stuff for the LaTeX preamble.
 #'preamble': '',
+
+# Eliminate blank pages per http://stackoverflow.com/questions/5422997/
+'babel' : '\\usepackage[english]{babel}',
+'classoptions': ',openany,oneside',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
