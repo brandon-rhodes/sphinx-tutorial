@@ -28,6 +28,9 @@ RST Quick Reference
 
  term
    Definition for the “term”, indented beneath it.
+ another term
+   And its definition; any of these definitions can continue on for
+   several lines by — you guessed it! — being similarly indented.
 
  * Each item in a list starts with an asterisk (or “1.”, “a.”, etc).
  * List items can go on for several lines as long as you remember to
@@ -36,5 +39,6 @@ RST Quick Reference
  Code blocks are introduced by a double-colon and are indented::
 
      import docutils
+     print help(docutils)
 
  >>> print 'But doctests start with ">>>" and need no indentation.'

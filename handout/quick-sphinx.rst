@@ -12,8 +12,10 @@ Sphinx Quick Reference
 
  .. code-block:: c
 
-    /* Or say 'highlight::' to set the language for all your code.
-       Options include ':linenos:' and ':emphasize-lines: 1,2,3'. */
+    /* Or say "highlight::" once to set the language for all of the
+     * code blocks that follow it.  Options include ":linenos:",
+     * ":linenothreshold:", and ":emphasize-lines: 1,2,3".
+     */
     char s[] = "You can also say 'python', 'ruby', ..., or 'guess'!";
 
  .. literalinclude:: example.py
@@ -37,4 +39,5 @@ Sphinx Quick Reference
  :ref:`custom-label`             :class:`~module.class`
  :doc:`quick-sphinx`             :method:`~module.class.method()`
  :mod:`module`                   :attr: `~module.class.attribute`
+
  (See the Sphinx “Inline Markup” chapter for MANY more examples!)
