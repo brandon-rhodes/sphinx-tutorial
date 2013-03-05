@@ -36,6 +36,7 @@ The “shape” module
 
       The three side lengths provided during instantiation.
 
+   .. index:: pair: equality; triangle
    .. method:: triangle1 == triangle2
 
       Returns true if the two triangles have sides of the same lengths,

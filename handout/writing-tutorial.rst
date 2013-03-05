@@ -19,9 +19,20 @@ then turn to trying to make it format correctly.
 Remember to add ``tutorial`` as the first document
 listed in your ``index.rst`` file!
 
+While plain ``names`` and ``attributes`` are simply
+displayed in a typewriter font, ``functions()`` and ``methods()``
+should be followed by a pair of parenthesis to make them look right.
+
 Here are two bonus goals if you finish early:
 
-1. Whenever a module, class, or function is mentioned
+1. Do you know whether the sample program really works?
+   Add a deliberate mistake to it and try running ``make doctest``
+   to see if you really get presented with an error.
+   If no error appears, then consult the previous :doc:`quick-sphinx`
+   chapter and try to figure out how to mark up the code and output
+   so that they get tested.
+
+2. Whenever a module, class, or function is mentioned
    in the text, you should mark it to create a cross-reference
    into the API document you have already written.
    Try out the following two styles of cross-reference
@@ -30,9 +41,13 @@ Here are two bonus goals if you finish early:
     the :class:`trianglelib.shape.Triangle` class
     the :class:`~trianglelib.shape.Triangle` class
 
-2. Do you know whether the code examples really works?
-   Try running ``make doctest`` to try out your code
-   examples and see if they really work.
-   If the command runs without reporting any errors,
-   then try deliberately introducing and error and re-running
-   ``make doctest`` so that you can see how its error output looks.
+3. If you managed to get the quote from Euclid to appear
+   at the top of your tutorial, how might you make it appear
+   in the index under the entry “Euclid”?
+
+4. In the sentence “Read *The trianglelib guide* to learn more”,
+   we want the phrase “The trianglelib guide” to become
+   an actual hyperlink to the guide itself.
+   Create a blank ``guide.rst`` document,
+   add it to your table of contents,
+   and see whether you can make the cross reference a clickable link.

@@ -3,19 +3,11 @@ instructions on web site
 email to people?
 look over build.sh from old tutorial?
 build vagrant box?
-:doc:
-.. warning::
-blockquote
-.. index::
 mention that the way you import should create a best-practice; show options
 :attr:`~triangles.shape.Triangle.a`
-equality for triangles
 "..." in traceback of triangle raising exception when not a triangle
 what to do with "Indices and tables" section? create some advice.
-what is the point of automodule without :members:? clarify 3 choices.
 mention putting "()" at end of name of functions and methods
-you can give a list to the :members: directive
-.. attribute:: to show a, b, c
 explain doctest vs code blocks vs just literals
 explain conf.py
 tour the Sphinx documentation
@@ -26,3 +18,4 @@ quickstart
 philosophy of frameworks and working starting points
 picture of where stuff gets built
 serving locally with simplehttpserver, NOT file:///
+semantic newlines

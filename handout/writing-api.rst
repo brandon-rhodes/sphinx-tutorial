@@ -92,26 +92,23 @@ At that point your API chapter
 will begin to strongly resemble the printed one!
 Here are further bonus goals in case you finish early:
 
-1. The printed chapter describes the triangle ``__eq__()`` method
-   by actually showing two triangles being compared;
-   can you get your version of the document to show the same thing?
-
-2. How can you display the attributes ``a``, ``b``, and ``c``
+1. How can you display the attributes ``a``, ``b``, and ``c``
    as presented in the printed document?
 
-3. Check your document indexes for whether all of these classes,
-   attributes, and methods are showing up.
-   Which are missing, if any?
-   Experiment and see if you can add them in.
+2. The printed chapter describes the triangle ``__eq__()`` method
+   by actually showing two triangles compared with the ``==`` operator;
+   can you get your version of the document to show the same thing?
 
-4. If you have not done so already, add in the example doctest
+3. If you have not done so already, add in the example doctest
    that stands just beneath the instantiation instructions
    in the printed version of the chapter.
+
+4. Try running ``make doctests`` — are your code samples correct?
+   Add some deliberate errors into the code to see what the output
+   looks like when doctests fail.
 
 5. Create example doctests for a few of the functions in ``utils``
    by turning off ``automodule`` for the ``utils`` module,
    explicitly autodoc'ing each of its five functions
    to pull them back into your documentation,
    and adding example code beneath each one.
-
-6. Can you run these doctests to be sure that they are correct?

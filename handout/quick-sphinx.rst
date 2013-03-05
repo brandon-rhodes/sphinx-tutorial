@@ -58,6 +58,14 @@ Sphinx Quick Reference
  This paragraph can be targeted with :ref:`custom-label`, and will also
  be the :index:`target` of several index entries!
 
+ .. index:: pair: copper, wire
+
+ This paragraph will be listed in the index under both “wire, copper”
+ and “copper, wire.”  See the index documentation for even more complex
+ ways of building index entries.
+
+ Many kinds of cross-reference can be used inside of a paragraph:
+
  :ref:`custom-label`             :class:`~module.class`
  :doc:`quick-sphinx`             :method:`~module.class.method()`
  :mod:`module`                   :attr: `~module.class.attribute`
