@@ -2,39 +2,62 @@
 Writing ‘api.rst’
 =================
 
-Your first task is to create your own ``api.rst`` document
-whose output looks just like the “The trianglelib API” chapter
-at the end of this handout!
+Your first assignment is to create your own ``api.rst`` document
+whose output looks just like the chapter
+“The trianglelib API reference” at the end of this handout!
 
-You should approach your task in three steps.
-For your first try, just use three straight autodoc calls
-to generate your entire chapter.
-Each autodoc call will look like this::
+Approach this task as three smaller steps.
+For your first try, just use three plain ``autodoc`` directives
+to generate your entire chapter from the contents
+of the ``trianglelib`` docstrings.
+Separate the three ``autodoc`` directives
+with sub-titles to make the chapter more organized::
 
-    .. automodule:: <Python module name>
+    The trianglelib API reference
+    =============================
+
+    .. automodule:: triangles
        :members:
 
-Make three autodoc calls like this in a row,
-one for each of these three module names::
+    The “shape” module
+    ------------------
 
-    trianglelib
-    trianglelib.shape
-    trianglelib.utils
+    .. automodule:: triangles.shape
+       :members:
 
-The resulting chapter already contains most of the information you need!
-Try adding sub-titles for the ``shape`` and ``utils`` modules,
-since otherwise readers will have a hard time telling
-where one section ends and the next begins.
+    The “utils” module
+    ------------------
 
-But where is the text describing how to instantiate ``Triangle``?
-You need to add it manually,
-and to do this,
-you need to take control of that class's presentation.
-Switch the ``shape`` from the using the ``automodule`` directive
-to using the plain old ``module` directive,
+    .. automodule:: triangles.utils
+       :members:
+
+Add ``api`` to the list of chapters in your table of contents
+in the ``index.rst`` file, and then build the resulting document.
+Note that you will get errors
+if Sphinx cannot find the ``trianglelib`` Python module,
+in which case you should consult the solutions
+in the “Running Sphinx” chapter of this document.
+
+Once your build is successful, take a look at your output document.
+It should already contain most of the information that you need!
+Compare the output carefully with the corresponding example
+bound with this documentation.
+What changes will you have to learn how to make
+in order to get the two documents to match?
+
+For example:
+where is the text describing how to instantiate ``Triangle``?
+You will need to add it manually,
+because ``autodoc`` does not pull that information from your code.
+So you will need to take control of that class's presentation.
+To take control,
+switch ``shape`` from the using the ``automodule::`` directive
+to using the plain old ``module::`` directive,
 which produces *no output* of its own
-but makes you explicitly list its contents yourself.
-This frees you up to build your own presentation for ``Triangle``:
+but makes you explicitly provide its contents yourself.
+This frees you up to build your own version of ``Triangle``
+that includes some introductory text before getting to work
+on its members:
 
 ::
 
@@ -45,16 +68,50 @@ This frees you up to build your own presentation for ``Triangle``:
 
        <Describe instantiation here!>
 
-At that point your API chapter
-should look very much like the one attached!
-Here are three bonus goals in case you finish early:
+Note that the name of the class ``Triangle``
+does not have to be prefixed with ``triangles.shape.``
+because the ``module::`` directive
+had already told Sphinx about where to look
+for the classes and methods that you describe in this file.
 
-1. Add in the example doctest
+You are getting closer,
+but the documentation still does not look exactly the same.
+For one thing, the first method shown right now is ``area()``
+since functions and attributes
+are shown in alphabetical order by default.
+Try each of the following directives in turn
+to achieve some other possible orderings::
+
+   :autodoc_member_order: bysource
+
+   :autodoc_member_order: groupwise
+
+   :members: is_equilateral, is_isosceles, ...
+
+At that point your API chapter
+will begin to strongly resemble the printed one!
+Here are further bonus goals in case you finish early:
+
+1. The printed chapter describes the triangle ``__eq__()`` method
+   by actually showing two triangles being compared;
+   can you get your version of the document to show the same thing?
+
+2. How can you display the attributes ``a``, ``b``, and ``c``
+   as presented in the printed document?
+
+3. Check your document indexes for whether all of these classes,
+   attributes, and methods are showing up.
+   Which are missing, if any?
+   Experiment and see if you can add them in.
+
+4. If you have not done so already, add in the example doctest
    that stands just beneath the instantiation instructions
    in the printed version of the chapter.
 
-2. Create example doctests for a few of the functions in ``utils``
+5. Create example doctests for a few of the functions in ``utils``
    by turning off ``automodule`` for the ``utils`` module,
    explicitly autodoc'ing each of its five functions
    to pull them back into your documentation,
    and adding example code beneath each one.
+
+6. Can you run these doctests to be sure that they are correct?

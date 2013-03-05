@@ -6,21 +6,43 @@ Sphinx Quick Reference
 
  .. note::
 
-    After saying ``note::``, provide one or more indented paragraphs.
-    Also: warning, versionadded, versionchanged, deprecated, seealso,
-    rubric, centered, hlist, glossary, productionlist.
+    Your note should consist of one or more paragraphs, all indented
+    so that they clearly belong to the note and not to the text or
+    directive that follows.
+
+    Many other directives are also supported, including: warning,
+    versionadded, versionchanged, seealso, deprecated, rubric,
+    centered, hlist, glossary, productionlist.
 
  .. code-block:: c
 
     /* Or say "highlight::" once to set the language for all of the
-     * code blocks that follow it.  Options include ":linenos:",
-     * ":linenothreshold:", and ":emphasize-lines: 1,2,3".
-     */
+       code blocks that follow it.  Options include ":linenos:",
+       ":linenothreshold:", and ":emphasize-lines: 1,2,3". */
+
     char s[] = "You can also say 'python', 'ruby', ..., or 'guess'!";
 
  .. literalinclude:: example.py
     :lines: 10-20
     :emphasize-lines: 15,16
+
+ .. module:: httplib
+
+ .. class:: Request
+
+    Zero or more paragraphs of introductory material for the class.
+
+    .. method:: send()
+
+       Description of the send() method.
+
+    .. attribute:: url
+
+       Description of the url attribute.
+
+    Many more members are possible than just method and attribute,
+    and non-Python languages are supported too; see the Sphinx docs
+    for more possibilities!
 
  .. testcode::
 
