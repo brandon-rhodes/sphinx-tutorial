@@ -1,4 +1,4 @@
 
-Writing “guide.rst”
+Writing ‘guide.rst’
 ===================
 

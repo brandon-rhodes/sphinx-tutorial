@@ -1,5 +1,5 @@
 
-Writing “tutorial.rst”
+Writing ‘tutorial.rst’
 ======================
 
 Having written our low-level API documentation,

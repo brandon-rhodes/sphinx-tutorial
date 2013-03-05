@@ -1,6 +1,6 @@
 
-(Example) The trianglelib tutorial
-==================================
+Example: tutorial.rst — The trianglelib tutorial
+================================================
 
 This module makes triangle processing fun.
 The beginner will enjoy how the :mod:`trianglelib.utils` module

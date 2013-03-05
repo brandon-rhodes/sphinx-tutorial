@@ -1,6 +1,6 @@
 
-(Example) The trianglelib API reference
-=======================================
+Example: api.rst — The trianglelib API reference
+================================================
 
 .. automodule:: trianglelib
    :members:

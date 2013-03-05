@@ -1,5 +1,5 @@
 
-Writing “api.rst”
+Writing ‘api.rst’
 =================
 
 Your first task is to create your own ``api.rst`` document

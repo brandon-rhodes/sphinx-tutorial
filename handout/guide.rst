@@ -1,6 +1,6 @@
 
-(Example) The trianglelib guide
-===============================
+Example: guide.rst — The trianglelib guide
+==========================================
 
 Whether you need to test the properties of triangles,
 or learn their dimensions, ``trianglelib`` does it all!
