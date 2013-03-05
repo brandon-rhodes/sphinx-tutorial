@@ -6,24 +6,21 @@ Having written our low-level API documentation,
 we are now going to turn to the first thing a new user reads:
 your tutorial!
 
-The tutorial is deliberately short,
-since there is no way to generate it automatically —
-you will be typing it in my hand —
+The tutorial is short to keep this tutorial from going too long,
 but it does try to both serve the real purpose of a tutorial,
 which is to show users how to get started with your library,
 and it also should help you practice reStructuredText.
 
-To begin with,
-just focus on getting the text typed in,
-then turn to trying to make it format correctly.
-Remember to add ``tutorial`` as the first document
-listed in your ``index.rst`` file!
+Remember to add your tutorial document's filename
+to the table of contents in your ``index.rst`` file!
 
 While plain ``names`` and ``attributes`` are simply
 displayed in a typewriter font, ``functions()`` and ``methods()``
 should be followed by a pair of parenthesis to make them look right.
 
-Here are two bonus goals if you finish early:
+Your task is to make the tutorial's text look as pretty
+as it does in the printed copy here in this handout.
+Here are some bonus goals if you finish early:
 
 1. Do you know whether the sample program really works?
    Add a deliberate mistake to it and try running ``make doctest``

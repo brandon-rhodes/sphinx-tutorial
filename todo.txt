@@ -19,3 +19,4 @@ philosophy of frameworks and working starting points
 picture of where stuff gets built
 serving locally with simplehttpserver, NOT file:///
 semantic newlines
+what you need when reading code vs what you need when writing code
