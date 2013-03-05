@@ -1,9 +1,11 @@
 
-(Example) The trianglelib API
-=============================
+(Example) The trianglelib API reference
+=======================================
 
 .. automodule:: trianglelib
    :members:
+
+t1 == t2
 
 The “shape” module
 ------------------

@@ -13,7 +13,9 @@ Contents:
 
    writing-api
    writing-tutorial
+   writing-guide
    tutorial
+   guide
    api
 
 Indices and tables

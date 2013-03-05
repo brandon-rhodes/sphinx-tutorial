@@ -1,6 +1,6 @@
 
-(Example) Writing “tutorial.rst”
-================================
+Writing “tutorial.rst”
+======================
 
 Having written our low-level API documentation,
 we are now going to turn to the first thing a new user reads:
