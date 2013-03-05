@@ -181,8 +181,9 @@ latex_elements = {
 #'preamble': '',
 
 # Eliminate blank pages per http://stackoverflow.com/questions/5422997/
-'babel' : '\\usepackage[english]{babel}',
+'babel' : r'\usepackage[english]{babel}',
 'classoptions': ',openany,oneside',
+'fncychap': r'\usepackage[Lenny]{fncychap}',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
