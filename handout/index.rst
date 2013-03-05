@@ -11,6 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   quick-rst
+   quick-sphinx
    writing-api
    writing-tutorial
    writing-guide
