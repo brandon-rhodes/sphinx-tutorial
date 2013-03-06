@@ -16,3 +16,9 @@ picture of where stuff gets built
 serving locally with simplehttpserver, NOT file:///
 semantic newlines
 what you need when reading code vs what you need when writing code
+indentation sensitive
+title underlines are arbitrary punctuation
+indentation levels are often arbitrary
+subtitle just has to be different; no punctuation is registered as "bigger"
+bullets can be + or - as well
+blockquoting a bulleted list by mistake
