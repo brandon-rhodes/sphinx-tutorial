@@ -8,14 +8,9 @@ what to do with "Indices and tables" section? create some advice.
 explain conf.py
 tour the Sphinx documentation
 *n*\ th
-frameworks and starting points
+small steps
 jim fulton structured text -> david goodger rst -> georg brandl sphinx
-quickstart
-philosophy of frameworks and working starting points
-picture of where stuff gets built
-serving locally with simplehttpserver, NOT file:///
 semantic newlines
-what you need when reading code vs what you need when writing code
 indentation sensitive
 title underlines are arbitrary punctuation
 indentation levels are often arbitrary

@@ -193,3 +193,38 @@ to making your package available to ``autodoc``.
    as it always goes along for the ride with your repository,
    and works immediately upon repository check-out
    without having to rely on any intermediate setup steps.
+
+Deployment
+----------
+
+We will discuss this topic in depth,
+but here are some links for your further reference
+when the class is complete:
+
+* It should be possible to export the contents of ``_build/html``
+  to any file-system-based web service and serve it as static content.
+
+* You can package the documentation in a ZIP file
+  and upload it using the “edit” page for your Python package,
+  and it will appear at the URL:
+
+  http://pythonhosted.org/<project-name>
+
+  Detailed instructions for this procedure live at:
+
+  http://pythonhosted.org/
+
+* The powerful and popular Read the Docs service
+  lets you configure your GitHub repository
+  so that every time you push a new version of your software,
+  the documentation gets automatically rebuilt
+  and made available at:
+
+  https://readthedocs.org/projects/<project-name>/
+
+  Read the Docs also supports custom host names
+  if you want your documentation to appear beneath your own
+  project sub-domain.
+  More information is available at:
+
+  https://readthedocs.org/
