@@ -6,9 +6,99 @@ Here are some quick notes on running Sphinx successfully.
 Each topic will be elaborated upon at the right point
 during our class.
 
-* Get rid of the line that says “Contents:” in ``index.rst``
-  since it causes a bizarre blank page in the PDF output,
-  and remove the whole section named “Indices and tables.”
+Starting a Sphinx project
+-------------------------
+
+The wonder of a properly designed framework
+is that it begins by positioning you at a working starting point
+instead of leaving you to wander endlessly through a ``README``
+that, after dozens of steps, leaves you guessing which step
+you did improperly to have wound up with a broken install.
+
+Sphinx gets you started with ``sphinx-quickstart``.
+Here is how a quick-start session will look,
+paying attention only to its prompts and how you should respond
+(which is mostly by pressing Return over and over),
+when you use it to create a new project::
+
+   $ sphinx-quickstart
+   Welcome to the Sphinx quickstart utility...
+
+   > Root path for the documentation [.]: doc
+   > Separate source and build directories (y/N) [n]:
+   > Name prefix for templates and static dir [_]:
+   > Project name: Triangles
+   > Author name(s): Brandon
+   > Project version: 1.0
+   > Project release [1.0]:
+   > Source file suffix [.rst]: .rst
+   > Name of your master document (without suffix) [index]: index
+   > Do you want to use the epub builder (y/N) [n]: n
+   > autodoc: automatically insert docstrings ... (y/N) [n]: y
+   > doctest: automatically test code snippets ... (y/N) [n]: y
+   > intersphinx: ... (y/N) [n]:
+   > todo: ... (y/N) [n]:
+   > coverage: ... (y/N) [n]:
+   > pngmath: ... (y/N) [n]:
+   > mathjax: ... (y/N) [n]: y
+   > ifconfig: ... (y/N) [n]:
+   > viewcode: include links to the source code ... (y/N) [n]: y
+   > Create Makefile? (Y/n) [y]: y
+   > Create Windows command file? (Y/n) [y]: y
+
+Sphinx layout
+-------------
+
+After you have succeeded in quick-starting,
+your project should look something like this,
+if we imagine that you created your ``doc`` Sphinx directory
+right next to your ``trianglelib`` Python package directory::
+
+ your-project/
+ |-- doc/
+ |   |-- Makefile
+ |   |-- _build/
+ |   |-- _static/
+ |   |-- _templates/
+ |   |-- conf.py
+ |   |-- index.rst
+ |   `-- make.bat
+ |-- setup.py
+ `-- trianglelib/
+     |-- __init__.py
+     |-- shape.py
+     `-- utils.py
+
+The ``index.rst`` is your initial documentation file,
+whose table of contents you will expand
+as you add additional ``.rst`` files to this directory.
+
+Hints
+-----
+
+Here are a few adjustments you can make to a Sphinx project
+once you have its files laid out and set up.
+
+* Build your documentation by changing directory
+  to the directory that contains the ``Makefile`` and then running::
+
+    make html
+
+* You can view the documentation by running Python's built-in
+  web server and navigating into the ``_build/html`` directory::
+
+    python -m SimpleHTTPServer
+
+* Feel free to create directories beneath ``doc``
+  for groups of ``.rst`` files that do not belong at the top level.
+  Simply refer to such files in your ``index.rst`` table of contents
+  using a ``dir/filename`` syntax so that Sphinx can find them.
+
+* You can get rid of the line that says “Contents:” in ``index.rst``
+  since it causes a bizarre blank page in the PDF output.
+
+* Remove the whole section of ``index.rst``
+  named “Indices and tables.”
 
 Helping autodoc find your package
 ---------------------------------
