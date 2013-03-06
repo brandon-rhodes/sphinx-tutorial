@@ -4,11 +4,7 @@ email to people?
 look over build.sh from old tutorial?
 build vagrant box?
 mention that the way you import should create a best-practice; show options
-:attr:`~triangles.shape.Triangle.a`
-"..." in traceback of triangle raising exception when not a triangle
 what to do with "Indices and tables" section? create some advice.
-mention putting "()" at end of name of functions and methods
-explain doctest vs code blocks vs just literals
 explain conf.py
 tour the Sphinx documentation
 *n*\ th
