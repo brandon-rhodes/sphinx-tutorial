@@ -6,11 +6,10 @@
 Welcome to trianglelib's documentation!
 =======================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
+   using-sphinx
    quick-rst
    quick-sphinx
    writing-api
@@ -19,11 +18,3 @@ Contents:
    tutorial
    guide
    api
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
