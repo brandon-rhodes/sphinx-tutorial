@@ -23,7 +23,7 @@ as it does in the printed copy here in this handout.
 Here are some bonus goals if you finish early:
 
 1. Do you know whether the sample program really works?
-   Add a deliberate mistake to it and try running ``make doctest``
+   Add a deliberate mistake to it and try running ``make`` ``doctest``
    to see if you really get presented with an error.
    If no error appears, then consult the previous :doc:`quick-sphinx`
    chapter and try to figure out how to mark up the code and output
@@ -45,6 +45,7 @@ Here are some bonus goals if you finish early:
 4. In the sentence “Read *The trianglelib guide* to learn more”,
    we want the phrase “The trianglelib guide” to become
    an actual hyperlink to the guide itself.
-   Create a blank ``guide.rst`` document,
+   Create a nearly empty ``guide.rst`` document that consists
+   of just an underlined title for right now,
    add it to your table of contents,
    and see whether you can make the cross reference a clickable link.

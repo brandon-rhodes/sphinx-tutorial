@@ -17,7 +17,7 @@ Welcome to the Sphinx Tutorial!
                      Break (refreshments served)
  10:50pm – 12:20pm   Conclusion of Tutorial
 
-Welcome to my PyCon tutorial,
+Welcome to my Sphinx tutorial,
 which is now in its fourth year at PyCon.
 Sphinx has come a long way since this tutorial was first offered
 back on a cold February day in 2010,

@@ -61,7 +61,7 @@ Sphinx Quick Reference
  .. index:: pair: copper, wire
 
  This paragraph will be listed in the index under both “wire, copper”
- and “copper, wire.”  See the index documentation for even more complex
+ and “copper, wire.”  See the Sphinx documentation for even more complex
  ways of building index entries.
 
  Many kinds of cross-reference can be used inside of a paragraph:

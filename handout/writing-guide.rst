@@ -37,16 +37,16 @@ here is a list of bonus challenges you might try out:
    the contents of the traceback.
 
 5. I have grown to dislike doctests more and more over the years,
-   most recently because users cannot easily cut-and-paste their code
+   most recently because users cannot easily cut-and-paste doctest code
    into their own programs without then having to manually backspace
    over all of the ``>>>`` prompts that get pasted in with the code.
    Convert the example in the :ref:`triangle-dimensions` section
-   into a ``testcode::`` block and a ``testoutput::`` block instead
-   and confirm that the blocks is getting detected, executed, and
+   into a ``testcode::`` block and a ``testoutput::`` block instead,
+   and confirm that the block is getting detected, executed, and
    tested when you run ``make`` ``doctest``.
 
 6. If you are able to access the Sphinx documentation
-   during the tutorial, then look up the ``math`` Sphinx extension
+   during the tutorial, look up the ``math`` Sphinx extension
    and try to figure out how I made the inequality equation
    so very pretty.
    As a super bonus, see if you can replace the inequality

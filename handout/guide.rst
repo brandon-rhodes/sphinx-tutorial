@@ -48,10 +48,11 @@ so long as two triangles have the same three sides in the same order!
 Valid triangles
 ---------------
 
-Many combinations of three numbers cannot make the sides of a triangle.
+Many combinations of three numbers cannot be the sides of a triangle.
 Even if all three numbers are positive instead of negative or zero,
 one of the numbers can still be so large
-that the shorter two sides could not actually meet to make a polygon.
+that the shorter two sides
+could not actually meet to make a closed figure.
 If :math:`c` is the longest side, then a triangle is only possible if:
 
 .. math::

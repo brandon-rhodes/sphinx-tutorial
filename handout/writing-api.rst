@@ -7,7 +7,7 @@ whose output looks just like the chapter
 “The trianglelib API reference” at the end of this handout!
 
 Approach this task as three smaller steps.
-For your first try, just use three plain ``autodoc`` directives
+For your first try, just use three plain autodoc directives
 to generate your entire chapter from the contents
 of the ``trianglelib`` docstrings.
 Separate the three ``autodoc`` directives
@@ -36,7 +36,7 @@ in the ``index.rst`` file, and then build the resulting document.
 Note that you will get errors
 if Sphinx cannot find the ``trianglelib`` Python module,
 in which case you should consult the solutions
-in the “Running Sphinx” chapter of this document.
+in the :doc:`using-sphinx` chapter of this document.
 
 Once your build is successful, take a look at your output document.
 It should already contain most of the information that you need!
@@ -106,7 +106,7 @@ Here are further bonus goals in case you finish early:
    that stands just beneath the instantiation instructions
    in the printed version of the chapter.
 
-4. Try running ``make doctests`` — are your code samples correct?
+4. Try running ``make`` ``doctests`` — are your code samples correct?
    Add some deliberate errors into the code to see what the output
    looks like when doctests fail.
 
