@@ -100,6 +100,23 @@ once you have its files laid out and set up.
 * Remove the whole section of ``index.rst``
   named “Indices and tables.”
 
+* Do not despair if you realize later that you need an extension
+  that you failed to answer ``y`` to during the quick-start;
+  simply go into the ``conf.py`` and add the extension to the
+  ``extensions`` list and make any other changes the extension needs.
+  You can always simply re-run the quick start to make a new project
+  with the extension active, then run ``diff`` between your own
+  ``Makefile`` and the new one to see what the differences are.
+
+* Here is a small diagram of how I think of documentation,
+  which we will use as a thumbnail guide during class::
+
+                       developer             developer
+      new user       writing new code       reading code
+         |                 |                     |
+         v                 v                     v
+      tutorial  <-->  topical guides  <-->  API reference
+
 Helping autodoc find your package
 ---------------------------------
 
@@ -134,7 +151,7 @@ to making your package available to ``autodoc``.
     export PYTHONPATH=/home/brandon/trianglelib
 
    Or you can set the Python path only for the build command itself,
-   leaving your shell variable settings pristine:
+   leaving your shell variable settings pristine::
 
     PYTHONPATH=/home/brandon/triangle-project make html
 
@@ -176,6 +193,3 @@ to making your package available to ``autodoc``.
    as it always goes along for the ride with your repository,
    and works immediately upon repository check-out
    without having to rely on any intermediate setup steps.
-
-html server
-pdf

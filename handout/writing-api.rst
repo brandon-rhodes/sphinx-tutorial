@@ -88,6 +88,9 @@ to achieve some other possible orderings::
 
    :members: is_equilateral, is_isosceles, ...
 
+Note that you can also say ``:exclude-members:``
+followed by the names of methods to leave out.
+
 At that point your API chapter
 will begin to strongly resemble the printed one!
 Here are further bonus goals in case you finish early:
