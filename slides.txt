@@ -4,8 +4,6 @@
 
 
 
-
-
                     The Sphinx Tutorial
 
 
@@ -29,6 +27,7 @@
              - Tutorial introduction
              - Topical guides
 
+
           * Deploying documentation
 
              - Serving static HTML
@@ -43,14 +42,23 @@
                      Community Hosting
                      -----------------
 
+    * pythonhosted.org
 
-    packages.python.org - now named - pythonhosted.org
-          Inconvenient: requires ZIP file upload
+      Used to be named packages.python.org
+      Inconvenient: requires ZIP file upload
 
-          ReadTheDocs.com
+    * ReadTheDocs.com
+
+      Popular because it is all kinds of awesome
+      First written at the 2010 Django Dash
+
+      http://www.slideshare.net/ericholscher
+        /the-story-and-tech-of-read-the-docs
 
 
 
+
+
 
                       Version Control
                       ---------------
