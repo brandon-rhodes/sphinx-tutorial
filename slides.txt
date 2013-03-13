@@ -42,21 +42,47 @@
                      Community Hosting
                      -----------------
 
-    * pythonhosted.org
 
-      Used to be named packages.python.org
-      Inconvenient: requires ZIP file upload
 
-    * ReadTheDocs.com
+                    * pythonhosted.org
+                    * ReadTheDocs.com
 
-      Popular because it is all kinds of awesome
-      First written at the 2010 Django Dash
+
+
+
+
+
+                     pythonhosted.org
+                     ----------------
+
+
+      * Used to be named packages.python.org
+
+      * Inconvenient: requires ZIP file upload
+
+
+
+
+
+
+
+                      ReadTheDocs.com
+                      ---------------
+
+    * Popular, well supported, awesome
+
+    * First written at the 2010 Django Dash
 
       http://www.slideshare.net/ericholscher
         /the-story-and-tech-of-read-the-docs
 
+    * See attached files for the story of:
+
+      https://brandons-sphinx-tutorial.readthedocs.org/
 
 
+
+
 
 
 
