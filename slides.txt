@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+
+                    The Sphinx Tutorial
+
+
+
+
+
+
+                      Brandon Rhodes
+
+                        PyCon 2013
+                  Santa Clara, California
+
+
+
+
+
+          * Writing documentation
+
+             - Automatic API documentation
+             - Hand-crafted API documentation
+             - Tutorial introduction
+             - Topical guides
+
+          * Deploying documentation
+
+             - Serving static HTML
+             - Hosted services
+             - Version control hints
+             - Theming
+
+
+
+
+
+                     Community Hosting
+                     -----------------
+
+
+    packages.python.org - now named - pythonhosted.org
+          Inconvenient: requires ZIP file upload
+
+          ReadTheDocs.com
+
+
+
+
+                      Version Control
+                      ---------------
+
+
+
+         - Semantic newlines can keep diffs simple
+           See my blog post "Semantic Linefeeds"
+
+
+
+
+
+                          Theming
+                          -------
+
+
+     1. Choosing a different theme
+     2. Custom HTML through "raw"
+     3. Custom HTML through writing your own templates
+
+
+
+
+Local variables:
+ mode:text
+ mode:page
+ fill-column:59
+End:
