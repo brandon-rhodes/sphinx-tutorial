@@ -3,7 +3,6 @@
 
 
 
-
                     The Sphinx Tutorial
 
 
@@ -30,9 +29,9 @@
 
           * Deploying documentation
 
-             - Serving static HTML
-             - Hosted services
-             - Version control hints
+             - Serving as static HTML
+             - Hosting on Read The Docs
+             - Storing in version control
              - Theming
 
 
@@ -76,12 +75,85 @@
       http://www.slideshare.net/ericholscher
         /the-story-and-tech-of-read-the-docs
 
-    * See attached files for the story of:
+
 
-      https://brandons-sphinx-tutorial.readthedocs.org/
+
+
+
+
+
+                Deploying to Read the Docs
+
+
+
+
+                 (A story, in four images)
 
 
 
+
+
+
+
+
+
+
+     https://brandons-sphinx-tutorial.readthedocs.org/
+
+
+
+
+
+
+
+            Staying up to date on Read the Docs
+
+
+
+
+     (A story, in two lines of code and three images)
+
+
+
+
+
+
+
+           Create a tag in your version control
+
+
+
+            $ git tag -a v0.1 -m 'Tagged v0.1'
+            $ git push --tags
+
+
+
+
+
+
+
+
+
+
+                     NOTHING HAPPENED
+
+
+
+
+             I had forgotten the service hook!
+
+
+
+
+
+
+
+
+
+
+    Then RTD Admin » Versions » Choose Active Versions
+
+
 
 
 
@@ -102,11 +174,20 @@
                           -------
 
 
+
      1. Choosing a different theme
      2. Custom HTML through "raw"
      3. Custom HTML through writing your own templates
 
 
+
+
+
+
+
+
+
+                   Thank you very much!
 
 
 Local variables:
