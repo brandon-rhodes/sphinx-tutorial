@@ -51,6 +51,8 @@ fi
 
 cp -r ../../triangle-project/setup.py triangle-project
 cp -r ../../triangle-project/trianglelib triangle-project
+cp -r ../../triangle-project/texts triangle-project
+
 find triangle-project -name '*.pyc' | xargs rm
 
 echo Done building!
