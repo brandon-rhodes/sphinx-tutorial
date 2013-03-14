@@ -2,22 +2,12 @@
 
 set -e
 
-if [ ! -d usb ]
-then
-    mkdir usb
-fi
+mkdir -p usb
 
 cd usb
 
-if [ ! -d Mac ]
-then
-    mkdir Mac
-fi
-
-if [ ! -d Windows ]
-then
-    mkdir Windows
-fi
+mkdir -p Mac
+mkdir -p Windows
 
 cd Mac
 wget -c http://www.python.org/ftp/python/2.7.3/python-2.7.3-macosx10.6.dmg
@@ -28,6 +18,9 @@ cd Windows
 wget -c http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi
 cd ..
 
+mkdir -p packages
+
+cd packages
 wget -c http://pypi.python.org/packages/2.6/S/Sphinx/Sphinx-1.1.3-py2.6.egg
 wget -c http://pypi.python.org/packages/2.7/S/Sphinx/Sphinx-1.1.3-py2.7.egg
 wget -c http://pypi.python.org/packages/source/S/Sphinx/Sphinx-1.1.3.tar.gz
@@ -48,12 +41,16 @@ cp virtualenv.py ..
 cp -r virtualenv_support ..
 cd ..
 rm -rf virtualenv-1.9.1
+cd ..
 
+cd Sphinx-Tutorial
 if [ ! -d triangle-project ]
 then
     mkdir triangle-project
 fi
-cp -r ../triangle-project/setup.py triangle-project
-cp -r ../triangle-project/trianglelib triangle-project
+
+cp -r ../../triangle-project/setup.py triangle-project
+cp -r ../../triangle-project/trianglelib triangle-project
+find triangle-project -name '*.pyc' | xargs rm
 
 echo Done building!
