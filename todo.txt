@@ -1,4 +1,3 @@
-
 instructions on web site
 email to people?
 look over build.sh from old tutorial?
@@ -18,3 +17,5 @@ subtitle just has to be different; no punctuation is registered as "bigger"
 bullets can be + or - as well
 blockquoting a bulleted list by mistake
 show search engine
+--
+Add Readme to github and link to video http://pyvideo.org/video/616/documenting-your-project-with-sphinx
