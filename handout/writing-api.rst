@@ -16,19 +16,19 @@ with sub-titles to make the chapter more organized::
     The trianglelib API reference
     =============================
 
-    .. automodule:: triangles
+    .. automodule:: trianglelib
        :members:
 
     The “shape” module
     ------------------
 
-    .. automodule:: triangles.shape
+    .. automodule:: trianglelib.shape
        :members:
 
     The “utils” module
     ------------------
 
-    .. automodule:: triangles.utils
+    .. automodule:: trianglelib.utils
        :members:
 
 Add ``api`` to the list of chapters in your table of contents
@@ -61,7 +61,7 @@ on its members:
 
 ::
 
-    .. module:: triangles.shape
+    .. module:: trianglelib.shape
 
     .. autoclass:: Triangle
        :members:
@@ -69,7 +69,7 @@ on its members:
        <Describe instantiation here!>
 
 Note that the name of the class ``Triangle``
-does not have to be prefixed with ``triangles.shape.``
+does not have to be prefixed with ``trianglelib.shape.``
 because the ``module::`` directive
 had already told Sphinx about where to look
 for the classes and methods that you describe in this file.
