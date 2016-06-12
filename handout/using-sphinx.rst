@@ -31,6 +31,7 @@ when you use it to create a new project::
    > Author name(s): Brandon
    > Project version: 1.0
    > Project release [1.0]:
+   > Project language [en]:
    > Source file suffix [.rst]: .rst
    > Name of your master document (without suffix) [index]: index
    > Do you want to use the epub builder (y/N) [n]: n
@@ -43,6 +44,7 @@ when you use it to create a new project::
    > mathjax: ... (y/N) [n]: y
    > ifconfig: ... (y/N) [n]:
    > viewcode: include links to the source code ... (y/N) [n]: y
+   > githubpages: ... (y/n) [n]:
    > Create Makefile? (Y/n) [y]: y
    > Create Windows command file? (Y/n) [y]: y
 
