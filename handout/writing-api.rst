@@ -82,9 +82,9 @@ are shown in alphabetical order by default.
 Try each of the following directives in turn
 to achieve some other possible orderings::
 
-   :autodoc_member_order: bysource
+   :member-order: bysource
 
-   :autodoc_member_order: groupwise
+   :member-order: groupwise
 
    :members: is_equilateral, is_isosceles, ...
 
