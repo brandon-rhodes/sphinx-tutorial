@@ -82,9 +82,9 @@ are shown in alphabetical order by default.
 Try each of the following directives in turn
 to achieve some other possible orderings::
 
-   :autodoc_member_order: bysource
+   :member-order: bysource
 
-   :autodoc_member_order: groupwise
+   :member-order: groupwise
 
    :members: is_equilateral, is_isosceles, ...
 
@@ -106,7 +106,7 @@ Here are further bonus goals in case you finish early:
    that stands just beneath the instantiation instructions
    in the printed version of the chapter.
 
-4. Try running ``make`` ``doctests`` — are your code samples correct?
+4. Try running ``make`` ``doctest`` — are your code samples correct?
    Add some deliberate errors into the code to see what the output
    looks like when doctests fail.
 
