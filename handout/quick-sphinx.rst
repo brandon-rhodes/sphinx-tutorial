@@ -67,7 +67,7 @@ Sphinx Quick Reference
  Many kinds of cross-reference can be used inside of a paragraph:
 
  :ref:`custom-label`             :class:`~module.class`
- :doc:`quick-sphinx`             :method:`~module.class.method()`
+ :doc:`quick-sphinx`             :attr:`~module.class.method()`
  :mod:`module`                   :attr: `~module.class.attribute`
 
  (See the Sphinx “Inline Markup” chapter for MANY more examples!)
