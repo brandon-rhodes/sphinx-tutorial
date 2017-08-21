@@ -222,7 +222,7 @@ when the class is complete:
   and upload it using the “edit” page for your Python package,
   and it will appear at the URL:
 
-  http://pythonhosted.org/<project-name>
+  ``http://pythonhosted.org/<project-name>``
 
   Detailed instructions for this procedure live at:
 
@@ -234,7 +234,7 @@ when the class is complete:
   the documentation gets automatically rebuilt
   and made available at:
 
-  https://readthedocs.org/projects/<project-name>/
+  ``https://readthedocs.org/projects/<project-name>/``
 
   Read the Docs also supports custom host names
   if you want your documentation to appear beneath your own
