@@ -40,7 +40,7 @@ when you use it to create a new project::
    > intersphinx: ... (y/N) [n]:
    > todo: ... (y/N) [n]:
    > coverage: ... (y/N) [n]:
-   > pngmath: ... (y/N) [n]:
+   > imgmath: ... (y/N) [n]:
    > mathjax: ... (y/N) [n]: y
    > ifconfig: ... (y/N) [n]:
    > viewcode: include links to the source code ... (y/N) [n]: y
